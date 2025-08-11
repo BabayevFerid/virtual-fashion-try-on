@@ -10,5 +10,11 @@
     "name": "Göy Şalvar",
     "imageUrl": "https://i.ibb.co/9VsTz0f/blue-pants.png",
     "type": "bottom"
+  },
+  {
+    "id": 3,
+    "name": "Qara Papaq",
+    "imageUrl": "https://i.ibb.co/JcGXfQX/black-hat.png",
+    "type": "headwear"
   }
 ]
