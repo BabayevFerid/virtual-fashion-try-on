@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Qırmızı Köynək",
+    "imageUrl": "https://i.ibb.co/7t9ZpG3/red-shirt.png",
+    "type": "top"
+  },
+  {
+    "id": 2,
+    "name": "Göy Şalvar",
+    "imageUrl": "https://i.ibb.co/9VsTz0f/blue-pants.png",
+    "type": "bottom"
+  }
+]
