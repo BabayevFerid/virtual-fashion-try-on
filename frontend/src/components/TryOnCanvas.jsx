@@ -21,6 +21,7 @@ export default function TryOnCanvas({ userImage, cloth }) {
       canvas.height = userImg.height;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.drawImage(userImg, 0, 0);
+
       if (clothImg.src) {
         clothImg.onload = () => {
           ctx.drawImage(clothImg, clothPosition.x, clothPosition.y, 150, 150);
@@ -37,7 +38,6 @@ export default function TryOnCanvas({ userImage, cloth }) {
     const rect = canvasRef.current.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
-    // Simple bounding box check for cloth image
     if (
       x >= clothPosition.x &&
       x <= clothPosition.x + 150 &&
@@ -64,7 +64,7 @@ export default function TryOnCanvas({ userImage, cloth }) {
     <div style={{ position: 'relative' }}>
       <canvas
         ref={canvasRef}
-        style={{ border: '1px solid #ccc', cursor: dragging ? 'grabbing' : 'grab' }}
+        style={{ border: '1px solid #ccc', cursor: dragging ? 'grabbing' : 'grab', maxWidth: '100%' }}
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
